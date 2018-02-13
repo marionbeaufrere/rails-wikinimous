@@ -6,6 +6,7 @@
 <% @articles.each do |article| %>
   <h2> <li> <%= link_to article.title, article %> </h2>
   <%= article.content %> </li>
+  <h3><%= link_to "Delete article", article, method: "DELETE" %></h3>
 <% end %>
 </ul>
 </div>
