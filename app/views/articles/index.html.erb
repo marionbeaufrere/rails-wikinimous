@@ -1,6 +1,8 @@
 <div class = "controller">
+<h1> Your list of articles </h1>
+<ul>
 <% @articles.each do |article| %>
-  <h2><%= article.title %></h2>
-  <p><%= article.content %></p>
+  <li> <%= link_to article.title, article %> </li>
 <% end %>
+</ul>
 </div>
